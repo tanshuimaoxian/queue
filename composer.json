@@ -1,0 +1,20 @@
+{
+    "name": "tanshuimaoxian/queue",
+    "description": "queue for yii2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mosen",
+            "email": "xu179@126.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2-redis": "*",
+        "tanshuimaoxian/crontab": "*"
+        },
+    "autoload": {
+        "psr-4": {
+            "tanshuimaoxian\\queue\\": "src/"
+        }
+    }
+}
