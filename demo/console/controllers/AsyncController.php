@@ -30,7 +30,7 @@ class AsyncController extends Task
                     $job = new Job($this, $msg);
                     $job->run();
                 }
-                $this->sleep(1);
+                $this->checkSign();
             } catch (\Exception $e) {
                 $msg = $e->getMessage();
                 $this->log("error:".$msg);

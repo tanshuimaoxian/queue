@@ -21,7 +21,7 @@ class LogController extends Task
                     $job = new Job();
                     $job->run($this, $msg);
                 }
-                $this->sleep(1);
+                $this->checkSign();
             } catch (\Exception $e) {
                 $msg = $e->getMessage();
                 $this->log("error:".$msg);
